@@ -55,9 +55,17 @@
                     Profesional dedicado al rubro del Area TI, con experiencia en desarrollo de software y gestión de proyectos. 
                 </p>
                 <div class="mb-5 pb-5">
-                    <button class="btn btn-lg btn-outline-info text-light me-4">Trabajos</button>
-                    <button class="btn btn-lg btn-info text-light">Contacto</button>
+                    <button class="btn btn-lg btn-outline-info text-light me-4" onclick="scrollToSection('Mis-trabajos')">Trabajos</button>
+                    <button class="btn btn-lg btn-info text-light" onclick="scrollToSection('Contacto')">Contacto</button>
                 </div>
+            
+                <script>
+                    function scrollToSection(id) {
+                    document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+                    }
+                </script>
+
+            
             </div>
         </div>
     </header>
